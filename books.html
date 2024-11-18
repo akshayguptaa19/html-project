@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highly Rated Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header span {
+            font-size: 14px;
+            color: #888;
+            margin-left: 10px;
+        }
+        .books {
+            display: flex;
+            gap: 20px;
+        }
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 23%;
+            background-color: #fff;
+            position: relative;
+        }
+        .best-seller {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 2px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #007185;
+        }
+        .author {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .rating {
+            font-size: 14px;
+            color: #f90;
+            margin-bottom: 5px;
+        }
+        .price {
+            font-size: 16px;
+            color: #B12704;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .old-price {
+            color: #767676;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        .discount {
+            font-size: 12px;
+            color: #B12704;
+        }
+        .deal {
+            color: #B12704;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .prime-badge {
+            background-color: #0073b1;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Highly Rated <span>Sponsored | Based on star rating and number of customer ratings</span></div>
+        <div class="books">
+            <!-- Book 1 -->
+            <div class="book">
+                <div class="best-seller">Best Seller</div>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71TqdH9wTmL._AC_UL480_FMwebp_QL65_.jpg" alt="World's Greatest Books"></a>
+                <div class="title">World's Greatest Books For Personal Growth & Wealth (Set of 4 Books)</div>
+                <div class="author">by Dale Carnegie, Napoleon Hill, et al.</div>
+                <div class="rating">⭐⭐⭐⭐4star </div>
+                <div class="deal">Limited time deal</div>
+                <div class="price">
+                    ₹349<span class="old-price">₹699</span>
+                </div>
+                <div class="discount">50% off</div>
+                <div class="prime-badge">prime</div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book">
+                <div class="best-seller">Best Seller</div>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71kTrlQyyCL._AC_UL480_FMwebp_QL65_.jpg" alt="As a Man Thinketh"></a>
+                <div class="title">As a Man Thinketh</div>
+                <div class="author">by James Allen</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5 star</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price">
+                    ₹99<span class="old-price">₹129</span>
+                </div>
+                <div class="discount">23% off</div>
+                <div class="prime-badge">prime</div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book">
+                <a href=""><img src="https://m.media-amazon.com/images/I/71VQNGbfuXL._AC_UL480_FMwebp_QL65_.jpg" alt="The Asura Way"></a>
+                <div class="title">The Asura Way: The Contrarian Path to Success</div>
+                <div class="author">by Anand Neelakantan</div>
+                <div class="rating">⭐⭐⭐ 3 star</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price">
+                    ₹297<span class="old-price">₹399</span>
+                </div>
+                <div class="discount">26% off</div>
+                <div class="prime-badge">prime</div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book">
+                <a href=""><img src="https://m.media-amazon.com/images/I/71Olpo9d0uL._AC_UL480_FMwebp_QL65_.jpg" alt="The Stoic Path to Wealth"></a>
+                <div class="title">The Stoic Path to Wealth: Ancient Wisdom For Enduring Prosperity</div>
+                <div class="author">by Darius Foroux</div>
+                <div class="rating">⭐⭐⭐⭐ 4 star</div>
+                <div class="price">
+                    ₹437
+                </div>
+                <div class="prime-badge">prime</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

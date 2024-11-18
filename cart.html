@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .cart-items {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cart-items h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .checkbox {
+            margin-right: 10px;
+        }
+        .cart-item img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        .cart-item-details {
+            flex: 1;
+        }
+        .cart-item-details h3 {
+            font-size: 16px;
+            margin: 0;
+            color: #007185;
+            cursor: pointer;
+        }
+        .cart-item-details p {
+            font-size: 14px;
+            color: #565959;
+            margin: 5px 0;
+        }
+        .cart-item-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #B12704;
+            text-align: right;
+        }
+        .cart-item-options {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: #007185;
+            margin-top: 8px;
+        }
+        .cart-item-options a {
+            text-decoration: none;
+            color: #007185;
+        }
+        .cart-item-options a:hover {
+            text-decoration: underline;
+        }
+        .cart-summary {
+            width: 25%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cart-summary h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .cart-summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .cart-summary-total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #B12704;
+        }
+        .checkout-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #ffa41b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+        }
+        .checkout-button:hover {
+            background-color: #f08804;
+        }
+        .eligible-shipping {
+            font-size: 12px;
+            color: #007185;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cart Items Section -->
+        <div class="cart-items">
+            <h2>Shopping Cart</h2>
+
+            <!-- First Item -->
+            <div class="cart-item">
+                <input type="checkbox" class="checkbox">
+                <a href=""><img src="https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_AA180_.jpg" alt="iPhone 13"></a>
+                <div class="cart-item-details">
+                    <h3>Apple iPhone 13 (128GB) - Starlight</h3>
+                    <p>Eligible for FREE Shipping</p>
+                    <p>Color: Starlight</p>
+                    <p>Size: 128 GB</p>
+                    <div class="cart-item-options">
+                        <a href="#">Delete</a>
+                        <a href="#">Save for later</a>
+                        <a href="#">See more like this</a>
+                    </div>
+                </div>
+                <div class="cart-item-price">₹45,499.00</div>
+            </div>
+
+            <!-- Second Item -->
+            <div class="cart-item">
+                <input type="checkbox" class="checkbox">
+                <a href=""><img src="https://m.media-amazon.com/images/I/514m1VhSUUL._AC_AA180_.jpg" alt="OnePlus Bullets Z2"></a>
+                <div class="cart-item-details">
+                    <h3>OnePlus Bullets Z2 Bluetooth Wireless in Ear Earphones</h3>
+                    <p class="eligible-shipping">Eligible for FREE Shipping</p>
+                    <p>Color: Beam Blue</p>
+                    <div class="cart-item-options">
+                        <a href="#">Delete</a>
+                        <a href="#">Save for later</a>
+                        <a href="#">See more like this</a>
+                    </div>
+                </div>
+                <div class="cart-item-price">₹1,299.00</div>
+            </div>
+            <!-- Subtotal -->
+            <div class="cart-item-total" style="display: flex; justify-content: space-between; margin-top: 20px; font-size: 18px;">
+                <span>Subtotal (2 items):</span>
+                <strong>₹46,798.00</strong>
+            </div>
+        </div>
+
+        <!-- Cart Summary Section -->
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="cart-summary-item">
+                <span>Subtotal (2 items):</span>
+                <span class="cart-summary-total">₹46,798.00</span>
+            </div>
+            <button class="checkout-button">Proceed to Buy</button>
+        </div>
+    </div>
+</body>
+</html>
